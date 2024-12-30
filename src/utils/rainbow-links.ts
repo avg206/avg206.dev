@@ -14,9 +14,28 @@ const Colors = [
   colors.fuchsia['600'],
 ];
 
+function shuffleArray(array: string[]): string[] {
+  const result = [...array];
+  for (let i = result.length - 1; i >= 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+const textDecorationColor = (function* () {
+  while (true) {
+    const colors = shuffleArray(Colors);
+
+    for (const color of colors) {
+      yield color;
+    }
+  }
+})();
+
 const updateLinksUnderline = () => {
   document.querySelectorAll('a').forEach((link) => {
-    link.style.textDecorationColor = Colors[Math.floor(Math.random() * Colors.length)];
+    link.style.textDecorationColor = textDecorationColor.next().value;
   });
 };
 
