@@ -8,3 +8,4 @@
 !astro.config.mjs
 !package.json
 !.prettierrc
+!tailwind.config.mjs
