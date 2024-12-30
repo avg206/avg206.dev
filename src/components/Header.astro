@@ -2,14 +2,14 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header class="w-full max-w-2xl">
-  <div class="flex w-full items-center justify-around py-16">
+<header class="container flex-col">
+  <div class="flex w-full flex-col md:flex-row items-center justify-around py-10">
     <div>
       <h1 class="text-primary mb-6 text-4xl"><a href="/">Anatoli Huseu</a></h1>
       <h2 class="text-secondary text-xl">Software Engineer<br />from Amsterdam</h2>
     </div>
 
-    <div>
+    <div class="mt-8 md:mt-0">
       <img src="/avatar.png" alt="Anatoli Huseu" class="h-48 w-48 rounded-full" />
     </div>
   </div>

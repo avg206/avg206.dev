@@ -4,6 +4,10 @@ body {
   @apply text-primary text-base leading-loose;
 }
 
+.container {
+  @apply flex px-8 w-full max-w-2xl
+}
+
 main a,
 footer a {
   @apply font-medium underline decoration-2 underline-offset-4;
