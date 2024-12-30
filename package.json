@@ -9,6 +9,7 @@
     "format:check": "prettier --check . --plugin=prettier-plugin-astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
+  "packageManager": "pnpm@9.13.2",
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/rss": "^4.0.10",
